@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacts Us</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <section>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Join the Web development Community. Get answers to your questions and
+            share your knowledge with other
+            developers here.</p>
+        <form action="contact.php" method="post">
+            <div class="text">
+                <label for="name">Account name:</label>
+                <input type="text" name="name" id="name" />
+            </div>
+            <div class="text">
+                <label for="subject">subject of your inquiry:</label>
+                <input type="text" name="subject" id="subject" list="subject-hint" />
+                <datalist id="subject-hint">
+                    <option value="Ask for support" />
+                    <option value="Aks for Informations" />
+                    <option value="Sales services" />
+                    <option value="Problem with billing" />
+                    <option value="Problem with shipping" />
+                </datalist>
+            </div>
+            <div class="textarea">
+                <label for="message">Your message</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
